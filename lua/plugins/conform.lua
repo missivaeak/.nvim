@@ -33,6 +33,8 @@ return {
         lua = { 'stylua' },
         javascript = { 'biome' },
         typescript = { 'biome' },
+        json = { 'biome' },
+        svelte = { 'biome' },
 
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },

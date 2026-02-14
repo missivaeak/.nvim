@@ -94,3 +94,10 @@ vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, { desc = 'Goto declaration' }
 vim.keymap.set('n', 'gO', require('telescope.builtin').lsp_document_symbols, { desc = 'Open Document Symbols' })
 vim.keymap.set('n', 'gW', require('telescope.builtin').lsp_dynamic_workspace_symbols, { desc = 'Open Workspace Symbols' })
 vim.keymap.set('n', 'gt', require('telescope.builtin').lsp_type_definitions, { desc = 'Goto type definition' })
+vim.keymap.set('n', 'ge', vim.diagnostic.open_float, { desc = 'View error' })
+
+local status, nvim_lsp = pcall(require, 'lspconfig')
+
+if not status then
+  return
+end
