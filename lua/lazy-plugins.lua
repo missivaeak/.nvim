@@ -23,6 +23,12 @@ require('lazy').setup({
         styles = {
           comments = { italic = false }, -- Disable italics in comments
         },
+        transparent = true,
+        on_colors = function(colors)
+          -- colors.terminal.bg_dark = '#000000'
+          -- colors.terminal.terminal_black = '#000000'
+          -- colors.terminal.fg = '#000000'
+        end,
       }
 
       -- Load the colorscheme here.
